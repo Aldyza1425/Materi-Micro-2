@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petualangan Logika: Berkenalan dengan Flowchart! - Belajar Interaktif untuk SMP</title>
+    <!-- Google Fonts: Outfit for friendly modern rounded look, and Fira Code for code bits -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+        <div class="glow-bg"></div>
+        <div class="container hero-container">
+            <h1 class="hero-title">Petualangan Logika:<br><span class="highlight-text">Berkenalan dengan Flowchart!</span></h1>
+            <p class="hero-subtitle">
+                Belajar berpikir logis seperti programmer dengan gambar dan simbol interaktif. 
+                Mari bantu karakter kita mengambil keputusan sebelum keluar rumah!
+            </p>
+        </div>
+        
+        <div class="hero-illustration">
+            <div class="floating-symbol oval"><i class="fa-solid fa-circle-play"></i></div>
+            <div class="floating-symbol rect"><i class="fa-solid fa-gears"></i></div>
+            <div class="floating-symbol diamond"><i class="fa-solid fa-code-branch"></i></div>
+            <div class="floating-symbol paral"><i class="fa-solid fa-right-to-bracket"></i></div>
+        </div>
+    </section>
+
+    <!-- TEORI & ANALOGI SECTION -->
+    <section class="section section-teori" id="teori">
+        <div class="container">
+            <div class="section-header">
+                <h2>1. Apa itu Flowchart?</h2>
+                <div class="divider"></div>
+                <p class="section-desc">
+                    Sebelum membuat program komputer, kita perlu menyusun langkah-langkah penyelesaiannya. 
+                    Langkah terurut itu dinamakan <strong>Algoritma</strong>. Flowchart adalah versi gambarnya!
+                </p>
+            </div>
+
+            <!-- Analogi Cards -->
+            <div class="analogi-grid">
+                <div class="analogi-card">
+                    <div class="card-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                    <h3>Seperti Petunjuk Jalan</h3>
+                    <p>Membantu temanmu agar tidak tersesat dengan memberikan peta bergambar arah belokan yang jelas.</p>
+                </div>
+                <div class="analogi-card">
+                    <div class="card-icon"><i class="fa-solid fa-utensils"></i></div>
+                    <h3>Seperti Resep Mie Instan</h3>
+                    <p>Menjelaskan urutan dari merebus air, memasukkan mie, mencampur bumbu, hingga siap disajikan.</p>
+                </div>
+                <div class="analogi-card">
+                    <div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>Mencegah Kesalahan</h3>
+                    <p>Dengan melihat alur gambar, kita bisa tahu jika ada langkah penting yang terlewat atau salah arah.</p>
+                </div>
+            </div>
+
+            <!-- Perbandingan Algoritma Teks vs Flowchart -->
+            <div class="comparison-container glass-panel">
+                <div class="comparison-header">
+                    <i class="fa-solid fa-code-compare icon-blue"></i>
+                    <h3>Algoritma Teks vs. Flowchart (Diagram Alir)</h3>
+                </div>
+                <p class="comparison-desc">
+                    Bagaimana perbedaan antara langkah tertulis dengan versi gambar diagram alir? Perhatikan perbandingannya di bawah ini:
+                </p>
+                <div class="comparison-grid">
+                    <div class="comparison-card text-card">
+                        <h4><i class="fa-solid fa-list-ol"></i> Versi Algoritma Teks</h4>
+                        <ol class="step-ol">
+                            <li>Mulai.</li>
+                            <li>Ambil cangkir dan masukkan teh celup.</li>
+                            <li>Tuangkan air panas.</li>
+                            <li><strong>Apakah mau manis?</strong>
+                                <ul>
+                                    <li>Jika <strong>Ya</strong>: Tambahkan gula, lalu aduk.</li>
+                                    <li>Jika <strong>Tidak</strong>: Jangan tambahkan gula.</li>
+                                </ul>
+                            </li>
+                            <li>Sajikan teh hangat.</li>
+                            <li>Selesai.</li>
+                        </ol>
+                    </div>
+                    <div class="comparison-card flowchart-info-card">
+                        <h4><i class="fa-solid fa-diagram-project"></i> Mengapa Flowchart Lebih Unggul?</h4>
+                        <ul class="benefit-ul">
+                            <li><i class="fa-solid fa-eye text-green"></i> <strong>Sangat Visual:</strong> Mata kita jauh lebih cepat mengenali bentuk gambar (seperti Belah Ketupat) dibanding membaca baris teks keputusan yang bercabang.</li>
+                            <li><i class="fa-solid fa-arrow-down-9-1 text-green"></i> <strong>Alur Pasti:</strong> Garis panah langsung membimbing kita ke langkah selanjutnya secara terarah tanpa ada kebingungan langkah mana yang harus dibaca.</li>
+                            <li><i class="fa-solid fa-globe text-green"></i> <strong>Bahasa Universal:</strong> Bentuk simbol yang digunakan sama di seluruh dunia. Programmer di Indonesia dan Amerika Serikat dapat membaca diagram yang sama tanpa hambatan bahasa!</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Simbol Utama Grid -->
+            <div class="simbol-header">
+                <h3>5 Simbol Dasar yang Wajib Kamu Tahu!</h3>
+                <p>Arahkan kursor atau ketuk kartu untuk melihat kegunaannya.</p>
+            </div>
+
+            <div class="simbol-grid">
+                <!-- Oval -->
+                <div class="simbol-card color-terminator" data-symbol="terminator">
+                    <div class="simbol-shape-container">
+                        <div class="shape-draw shape-oval">Start / End</div>
+                    </div>
+                    <h4>Terminator (Oval)</h4>
+                    <p class="simbol-desc">Menandai titik <strong>Mulai (Start)</strong> dan <strong>Selesai (End)</strong> dari sebuah alur.</p>
+                    <div class="simbol-tip">Contoh: "Mulai" atau "Selesai"</div>
+                </div>
+
+                <!-- Jajaran Genjang -->
+                <div class="simbol-card color-io" data-symbol="io">
+                    <div class="simbol-shape-container">
+                        <div class="shape-draw shape-parallelogram">Input / Output</div>
+                    </div>
+                    <h4>Input / Output (Jajaran Genjang)</h4>
+                    <p class="simbol-desc">Digunakan saat <strong>menerima data masuk</strong> atau <strong>menampilkan hasil</strong>.</p>
+                    <div class="simbol-tip">Contoh: "Lihat hari hujan" atau "Cetak skor"</div>
+                </div>
+
+                <!-- Belah Ketupat -->
+                <div class="simbol-card color-decision" data-symbol="decision">
+                    <div class="simbol-shape-container">
+                        <div class="shape-draw shape-rhombus"></div>
+                    </div>
+                    <h4>Decision (Belah Ketupat)</h4>
+                    <p class="simbol-desc">Tempat mengambil <strong>keputusan / pilihan</strong> (menghasilkan Ya atau Tidak).</p>
+                    <div class="simbol-tip">Contoh: "Apakah hari ini hujan?"</div>
+                </div>
+
+                <!-- Persegi Panjang -->
+                <div class="simbol-card color-process" data-symbol="process">
+                    <div class="simbol-shape-container">
+                        <div class="shape-draw shape-rectangle">Ambil Payung</div>
+                    </div>
+                    <h4>Process (Persegi Panjang)</h4>
+                    <p class="simbol-desc">Menunjukkan suatu <strong>tindakan, proses, kegiatan</strong>, atau perhitungan.</p>
+                    <div class="simbol-tip">Contoh: "Ambil payung" atau "Rebus mie"</div>
+                </div>
+
+                <!-- Panah -->
+                <div class="simbol-card color-arrow" data-symbol="arrow">
+                    <div class="simbol-shape-container">
+                        <div class="shape-draw shape-arrow">
+                            <span class="arrow-line"></span>
+                            <span class="arrow-head"></span>
+                        </div>
+                    </div>
+                    <h4>Flow Line (Garis Panah)</h4>
+                    <p class="simbol-desc">Menghubungkan antar-simbol dan menunjukkan <strong>arah alur data</strong>.</p>
+                    <div class="simbol-tip">Menunjuk langkah selanjutnya dari atas ke bawah.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SIMULATOR WORKSPACE SECTION -->
+    <section class="section section-simulator" id="simulator">
+        <div class="glow-bg-radial"></div>
+        <div class="container">
+            <div class="section-header">
+                <h2>2. Simulator Alur Logika</h2>
+                <div class="divider"></div>
+                <p class="section-desc">
+                    Ayo uji logika flowchart <strong>"Memakai Payung Saat Hujan"</strong> secara langsung! 
+                    Pilih cuaca di luar rumah, lalu jalankan animasinya untuk melihat bagaimana komputer mengeksekusi logika ini.
+                </p>
+            </div>
+
+            <div class="simulator-layout">
+                <!-- COLUMN 1: SVG FLOWCHART DIAGRAM -->
+                <div class="simulator-flowchart-card glass-panel">
+                    <div class="card-title-bar">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="panel-title">Diagram Alir (Flowchart)</span>
+                    </div>
+                    <div class="flowchart-scroll-wrapper">
+                        <!-- SVG Flowchart -->
+                        <svg id="flowchart-svg" viewBox="0 0 540 500" width="100%" height="100%">
+                            <!-- Defs for arrows marker -->
+                            <defs>
+                                <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="8" refY="3.5" orient="auto">
+                                    <polygon points="0 0, 10 3.5, 0 7" fill="#64748b" />
+                                </marker>
+                                <marker id="arrowhead-active" markerWidth="10" markerHeight="7" refX="8" refY="3.5" orient="auto">
+                                    <polygon points="0 0, 10 3.5, 0 7" fill="#00f2fe" />
+                                </marker>
+                                <filter id="neon-glow" x="-20%" y="-20%" width="140%" height="140%">
+                                    <feGaussianBlur stdDeviation="6" result="blur" />
+                                    <feMerge>
+                                        <feMergeNode in="blur" />
+                                        <feMergeNode in="SourceGraphic" />
+                                    </feMerge>
+                                </filter>
+                            </defs>
+
+                            <!-- FLOW LINES / CONNECTIONS (BACKGROUND) -->
+                            <!-- Start -> Check Weather -->
+                            <path id="path-start-check" d="M 270,65 L 270,115" stroke="#475569" stroke-width="3" fill="none" marker-end="url(#arrowhead)" />
+                            
+                            <!-- Check Weather -> Decision -->
+                            <path id="path-check-decision" d="M 270,155 L 270,185" stroke="#475569" stroke-width="3" fill="none" marker-end="url(#arrowhead)" />
+                            
+                            <!-- Decision -> Process (Ya / Hujan) -->
+                            <path id="path-decision-yes" d="M 335,215 L 430,215 L 430,255" stroke="#475569" stroke-width="3" fill="none" marker-end="url(#arrowhead)" />
+                            
+                            <!-- Decision -> Process (Tidak / Cerah) -->
+                            <path id="path-decision-no" d="M 270,245 L 270,325" stroke="#475569" stroke-width="3" fill="none" marker-end="url(#arrowhead)" />
+                            
+                            <!-- Process (Ya / Buka Payung) -> Keluar Rumah Join -->
+                            <path id="path-yes-join" d="M 430,305 L 430,355 L 343,355" stroke="#475569" stroke-width="3" fill="none" marker-end="url(#arrowhead)" />
+                            
+                            <!-- Process (Keluar Rumah) -> End -->
+                            <path id="path-join-end" d="M 270,385 L 270,425" stroke="#475569" stroke-width="3" fill="none" marker-end="url(#arrowhead)" />
+
+                            <!-- SIMBOL NODES -->
+                            <!-- Node 1: Start (Oval) -->
+                            <g id="node-start" class="flowchart-node node-oval">
+                                <rect x="200" y="25" width="140" height="40" rx="20" ry="20" class="node-shape" />
+                                <text x="270" y="49" class="node-text">Start (Mulai)</text>
+                            </g>
+
+                            <!-- Node 2: Input (Jajaran Genjang) - Lihat ke luar jendela -->
+                            <g id="node-check" class="flowchart-node node-parallelogram">
+                                <polygon points="210,115 340,115 320,155 190,155" class="node-shape" />
+                                <text x="265" y="139" class="node-text">Lihat Cuaca</text>
+                            </g>
+
+                            <!-- Node 3: Decision (Belah Ketupat) - Apakah Hujan? -->
+                            <g id="node-decision" class="flowchart-node node-rhombus">
+                                <polygon points="270,185 335,215 270,245 205,215" class="node-shape" />
+                                <text x="270" y="219" class="node-text">Apakah Hujan?</text>
+                                <!-- Ya/Tidak Labels -->
+                                <text x="350" y="205" class="label-text text-yes">Ya</text>
+                                <text x="282" y="280" class="label-text text-no">Tidak</text>
+                            </g>
+
+                            <!-- Node 4: Process Ya (Persegi Panjang) - Ambil & Buka Payung -->
+                            <g id="node-yes-process" class="flowchart-node node-rectangle">
+                                <rect x="360" y="255" width="140" height="50" rx="6" class="node-shape" />
+                                <text x="430" y="284" class="node-text">Ambil Payung</text>
+                            </g>
+
+                            <!-- Node 5: Process (Persegi Panjang) - Keluar Rumah -->
+                            <g id="node-out-process" class="flowchart-node node-rectangle">
+                                <rect x="200" y="325" width="140" height="60" rx="6" class="node-shape" />
+                                <text x="270" y="354" class="node-text">Keluar Rumah</text>
+                                <text x="270" y="372" class="node-text-sub">Membawa Payung?</text>
+                            </g>
+
+                            <!-- Node 6: End (Oval) -->
+                            <g id="node-end" class="flowchart-node node-oval">
+                                <rect x="200" y="425" width="140" height="40" rx="20" ry="20" class="node-shape" />
+                                <text x="270" y="449" class="node-text">End (Selesai)</text>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- COLUMN 2: INTERACTIVE CONTROLS & VISUAL ENVIRONMENT -->
+                <div class="simulator-controls-card">
+                    
+                    <!-- Environment Visual Box -->
+                    <div class="environment-box glass-panel">
+                        <div class="env-header">
+                            <span class="env-indicator"><i class="fa-solid fa-cloud-sun"></i> Kondisi di Luar Rumah:</span>
+                            <span id="env-status-badge" class="badge-env cerah">Cerah</span>
+                        </div>
+                        <div class="env-visual-container">
+                            <!-- Rain / Sun dynamic animation -->
+                            <div class="sky-bg day">
+                                <div class="sun"></div>
+                                <div class="clouds">
+                                    <i class="fa-solid fa-cloud cloud-1"></i>
+                                    <i class="fa-solid fa-cloud cloud-2"></i>
+                                </div>
+                                <div class="rain-drops" id="rain-drops"></div>
+                            </div>
+                            <div class="house-container">
+                                <!-- Mascot Character in House -->
+                                <div class="door-frame">
+                                    <div class="door" id="house-door"></div>
+                                    <div class="character" id="avatar-character">
+                                        <div class="avatar-face-eyes"></div>
+                                        <div class="avatar-body"></div>
+                                        <div class="avatar-accessory" id="avatar-accessory"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Simulator Controls Panel -->
+                    <div class="control-panel-box glass-panel">
+                        <h3><i class="fa-solid fa-sliders"></i> Panel Kendali Simulasi</h3>
+                        <p class="panel-desc">Ubah kondisi cuaca dan lihat bagaimana alur diagram berubah otomatis.</p>
+                        
+                        <div class="weather-selector">
+                            <span class="control-label">Pilih Kondisi Cuaca:</span>
+                            <div class="toggle-group">
+                                <button type="button" class="btn-toggle active" id="btn-weather-sunny" data-weather="sunny">
+                                    <i class="fa-solid fa-sun text-yellow"></i> Cerah (Tidak Hujan)
+                                </button>
+                                <button type="button" class="btn-toggle" id="btn-weather-rainy" data-weather="rainy">
+                                    <i class="fa-solid fa-cloud-showers-heavy text-cyan"></i> Hujan (Ya)
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="action-buttons">
+                            <button class="btn btn-primary btn-block btn-glow" id="btn-run-sim">
+                                <i class="fa-solid fa-play"></i> Jalankan Simulasi Alur
+                            </button>
+                            <button class="btn btn-secondary btn-block" id="btn-reset-sim" disabled>
+                                <i class="fa-solid fa-rotate-left"></i> Reset
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Step Explanation Box -->
+                    <div class="explanation-box glass-panel" id="explanation-box">
+                        <div class="exp-mascot">
+                            <div class="mascot-face"><i class="fa-solid fa-robot"></i></div>
+                            <div class="mascot-speech">
+                                <h4 id="speech-title">Instruksi Simulasi</h4>
+                                <p id="speech-text">Klik tombol <strong>"Jalankan Simulasi Alur"</strong> di atas untuk melihat bagaimana data dan keputusan mengalir di dalam flowchart!</p>
+                            </div>
+                        </div>
+                        <div class="steps-tracker" id="steps-tracker">
+                            <!-- Dynamic list of steps executed -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ATURAN PENTING SECTION -->
+    <section class="section section-rules">
+        <div class="container">
+            <div class="rules-container glass-panel">
+                <div class="rules-header">
+                    <i class="fa-solid fa-circle-exclamation text-yellow"></i>
+                    <h2>3 Aturan Penting Membuat Flowchart</h2>
+                </div>
+                <div class="rules-grid">
+                    <div class="rule-item">
+                        <span class="rule-num">1</span>
+                        <div class="rule-content">
+                            <h4>Selalu dari Atas ke Bawah</h4>
+                            <p>Alur data standar mengalir dari atas ke bawah atau kiri ke kanan agar mudah ditelusuri.</p>
+                        </div>
+                    </div>
+                    <div class="rule-item">
+                        <span class="rule-num">2</span>
+                        <div class="rule-content">
+                            <h4>Harus Ada Start & End</h4>
+                            <p>Setiap diagram hanya boleh memiliki tepat <strong>satu</strong> simbol Start dan minimal satu simbol End.</p>
+                        </div>
+                    </div>
+                    <div class="rule-item">
+                        <span class="rule-num">3</span>
+                        <div class="rule-content">
+                            <h4>Pilihan Harus Jelas</h4>
+                            <p>Setiap garis keluar dari simbol Decision harus diberi label Ya/Tidak atau Benar/Salah yang tegas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fa-solid fa-network-wired text-cyan"></i>
+                    <span>Flowchart Adventure</span>
+                </div>
+                <p>Bahan Ajar Pembelajaran Logika Komputasional - Tingkat SMP</p>
+                <div class="footer-links">
+                    <a href="#hero">Atas</a>
+                    <a href="#teori">Materi Simbol</a>
+                    <a href="#simulator">Simulator</a>
+                </div>
+                <p class="copyright">&copy; 2026. Dibuat dengan &hearts; untuk Micro Teaching SMP.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
