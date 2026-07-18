@@ -350,6 +350,409 @@
 
 
 
+    <!-- STRUKTUR KONTROL SECTION -->
+    <section class="section section-struktur" id="struktur">
+        <div class="glow-bg-radial"></div>
+        <div class="container">
+            <div class="section-header">
+                <h2>3. Tiga Struktur Kontrol Alur Logika</h2>
+                <div class="divider"></div>
+                <p class="section-desc">
+                    Dalam membuat program komputer, terdapat 3 struktur utama yang digunakan untuk mengatur jalannya data. 
+                    Klik tab di bawah ini untuk mempelajari dan menyimulasikan setiap struktur!
+                </p>
+            </div>
+
+            <!-- Tab Buttons Selector -->
+            <div class="structure-tabs-wrapper">
+                <div class="structure-tabs">
+                    <button class="tab-btn active" data-tab="sequence">
+                        <i class="fa-solid fa-arrow-down-long"></i> Runtunan (Sequence)
+                    </button>
+                    <button class="tab-btn" data-tab="selection">
+                        <i class="fa-solid fa-code-branch"></i> Percabangan (Selection)
+                    </button>
+                    <button class="tab-btn" data-tab="looping">
+                        <i class="fa-solid fa-arrows-spin"></i> Perulangan (Looping)
+                    </button>
+                </div>
+            </div>
+
+            <!-- Tab Panes Container -->
+            <div class="structure-panes">
+                
+                <!-- 1. SEQUENCE PANE -->
+                <div class="tab-pane active" id="pane-sequence">
+                    <div class="structure-grid">
+                        <div class="pane-details">
+                            <div class="glass-panel info-card-structure">
+                                <div class="card-header-accent color-process">
+                                    <i class="fa-solid fa-arrow-down-long"></i>
+                                    <h3>Apa itu Runtunan (Sequence)?</h3>
+                                </div>
+                                <div class="card-body-structure">
+                                    <p class="structure-explanation">
+                                        Struktur Runtunan adalah alur yang berjalan <strong>lurus dan berurutan</strong> dari atas ke bawah. Setiap langkah dieksekusi tepat satu kali secara berturut-turut, tanpa ada percabangan atau pengulangan.
+                                    </p>
+                                    <div class="analogi-box-structure">
+                                        <div class="analogi-title">
+                                            <i class="fa-solid fa-lightbulb"></i>
+                                            <span>Analogi Kehidupan Sehari-hari:</span>
+                                        </div>
+                                        <p class="analogi-text">
+                                            Menyeduh susu cokelat hangat! Kamu harus mulai, memasukkan susu bubuk ke gelas, menuangkan air panas, mengaduk susu, lalu selesai. Urutannya harus pas dan tidak bisa melompat.
+                                        </p>
+                                    </div>
+
+                                    <!-- Visual Simulation Box for Sequence -->
+                                    <div class="analogi-visual-box block-sequence" id="visual-sequence">
+                                        <div class="visual-shelf">
+                                            <div class="shelf-content-seq">
+                                                <!-- Spoon -->
+                                                <div class="mini-spoon" id="seq-spoon">
+                                                    <div class="spoon-handle"></div>
+                                                    <div class="spoon-bowl"></div>
+                                                </div>
+                                                <!-- Water Pot -->
+                                                <div class="mini-pot" id="seq-pot">
+                                                    <div class="pot-body"></div>
+                                                    <div class="pot-spout"></div>
+                                                </div>
+                                                <!-- Independent vertical water stream (not inside pot so it stays vertical) -->
+                                                <div class="pot-stream" id="seq-pot-stream"></div>
+                                                <!-- Cup -->
+                                                <div class="mini-cup" id="seq-cup">
+                                                    <div class="cup-body">
+                                                        <div class="milk-powder" id="seq-milk-powder"></div>
+                                                        <div class="milk-liquid" id="seq-milk-liquid"></div>
+                                                        <div class="steam-container">
+                                                            <span class="steam-line steam-1"></span>
+                                                            <span class="steam-line steam-2"></span>
+                                                            <span class="steam-line steam-3"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cup-handle"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="visual-status" id="status-sequence">Status: Siap menyeduh</div>
+                                    </div>
+
+                                    <button class="btn btn-primary btn-glow btn-animate-flow" data-flow="sequence">
+                                        <i class="fa-solid fa-play"></i> Simulasikan Alur Runtunan
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pane-diagram">
+                            <div class="glass-panel diagram-card-structure">
+                                <div class="card-title-bar">
+                                    <span class="dot red"></span>
+                                    <span class="dot yellow"></span>
+                                    <span class="dot green"></span>
+                                    <span class="panel-title">Diagram Runtunan (Sequence)</span>
+                                </div>
+                                <div class="diagram-svg-container">
+                                    <svg id="svg-sequence" viewBox="0 0 400 360" width="100%" height="100%">
+                                        <!-- Definitions for markers -->
+                                        <defs>
+                                            <marker id="arrow-seq" markerWidth="10" markerHeight="7" refX="8" refY="3.5" orient="auto">
+                                                <polygon points="0 0, 10 3.5, 0 7" fill="#64748b" />
+                                            </marker>
+                                            <marker id="arrow-seq-active" markerWidth="10" markerHeight="7" refX="8" refY="3.5" orient="auto">
+                                                <polygon points="0 0, 10 3.5, 0 7" fill="#6366f1" />
+                                            </marker>
+                                        </defs>
+                                        
+                                        <!-- Paths -->
+                                        <path id="seq-path-1" d="M 200,65 L 200,105" stroke="#475569" stroke-width="3" fill="none" marker-end="url(#arrow-seq)" />
+                                        <path id="seq-path-2" d="M 200,155 L 200,195" stroke="#475569" stroke-width="3" fill="none" marker-end="url(#arrow-seq)" />
+                                        <path id="seq-path-3" d="M 200,245 L 200,285" stroke="#475569" stroke-width="3" fill="none" marker-end="url(#arrow-seq)" />
+                                        
+                                        <!-- Nodes -->
+                                        <g id="seq-node-start" class="flowchart-node node-oval">
+                                            <rect x="130" y="25" width="140" height="40" rx="20" ry="20" class="node-shape" />
+                                            <text x="200" y="49" class="node-text">Mulai</text>
+                                        </g>
+                                        
+                                        <g id="seq-node-step1" class="flowchart-node node-rectangle">
+                                            <rect x="110" y="105" width="180" height="50" rx="6" class="node-shape" />
+                                            <text x="200" y="134" class="node-text">Masukkan Susu bubuk</text>
+                                        </g>
+                                        
+                                        <g id="seq-node-step2" class="flowchart-node node-rectangle">
+                                            <rect x="110" y="195" width="180" height="50" rx="6" class="node-shape" />
+                                            <text x="200" y="224" class="node-text">Seduh & Aduk Susu</text>
+                                        </g>
+                                        
+                                        <g id="seq-node-end" class="flowchart-node node-oval">
+                                            <rect x="130" y="285" width="140" height="40" rx="20" ry="20" class="node-shape" />
+                                            <text x="200" y="309" class="node-text">Selesai</text>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. SELECTION PANE -->
+                <div class="tab-pane" id="pane-selection">
+                    <div class="structure-grid">
+                        <div class="pane-details">
+                            <div class="glass-panel info-card-structure">
+                                <div class="card-header-accent color-decision">
+                                    <i class="fa-solid fa-code-branch"></i>
+                                    <h3>Apa itu Percabangan (Selection)?</h3>
+                                </div>
+                                <div class="card-body-structure">
+                                    <p class="structure-explanation">
+                                        Struktur Percabangan adalah alur yang memiliki <strong>percabangan atau pilihan alur</strong> berdasarkan suatu syarat (kondisi). Keputusan diuji menggunakan simbol Decision (Belah Ketupat), menghasilkan jalur Ya atau Tidak.
+                                    </p>
+                                    <div class="analogi-box-structure">
+                                        <div class="analogi-title">
+                                            <i class="fa-solid fa-lightbulb"></i>
+                                            <span>Analogi Kehidupan Sehari-hari:</span>
+                                        </div>
+                                        <p class="analogi-text">
+                                            Logika memakai helm saat akan berkendara motor. Kita bertanya pada diri sendiri: "Apakah naik motor?". Jika Ya, lakukan proses "Pakai Helm". Jika Tidak, langsung lanjut jalan tanpa pakai helm.
+                                        </p>
+                                    </div>
+
+                                    <!-- Choice Selector for Selection -->
+                                    <div class="selection-choice-container">
+                                        <span class="control-label"><i class="fa-solid fa-motorcycle"></i> Naik Motor?</span>
+                                        <div class="toggle-group selection-toggle">
+                                            <button type="button" class="btn-toggle active" id="btn-sel-yes" data-choice="yes">
+                                                <i class="fa-solid fa-motorcycle text-yellow"></i> Ya (Pakai Helm)
+                                            </button>
+                                            <button type="button" class="btn-toggle" id="btn-sel-no" data-choice="no">
+                                                <i class="fa-solid fa-person-walking text-cyan"></i> Tidak (Jalan Kaki)
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <!-- Visual Simulation Box for Selection -->
+                                    <div class="analogi-visual-box block-selection" id="visual-selection">
+                                        <div class="visual-shelf road-bg">
+                                            <div class="shelf-content-sel">
+                                                <!-- Question mark speech bubble -->
+                                                <div class="decision-bubble" id="sel-bubble">?</div>
+                                                <!-- Falling Helmet -->
+                                                <div class="mini-helmet" id="sel-helmet">
+                                                    <div class="helmet-dome"></div>
+                                                    <div class="helmet-strap"></div>
+                                                </div>
+                                                <!-- Student Mascot -->
+                                                <div class="mini-student" id="sel-student">
+                                                    <div class="student-head">
+                                                        <div class="student-eyes"></div>
+                                                    </div>
+                                                    <div class="student-body"></div>
+                                                    <div class="student-accessory" id="sel-student-helmet-worn"></div>
+                                                </div>
+                                                <!-- Scooter -->
+                                                <div class="mini-scooter" id="sel-scooter">
+                                                    <div class="scooter-body"></div>
+                                                    <div class="scooter-wheel wheel-1"></div>
+                                                    <div class="scooter-wheel wheel-2"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="visual-status" id="status-selection">Status: Bersiap berangkat</div>
+                                    </div>
+
+                                    <button class="btn btn-primary btn-glow btn-animate-flow" data-flow="selection">
+                                        <i class="fa-solid fa-play"></i> Simulasikan Alur Percabangan
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pane-diagram">
+                            <div class="glass-panel diagram-card-structure">
+                                <div class="card-title-bar">
+                                    <span class="dot red"></span>
+                                    <span class="dot yellow"></span>
+                                    <span class="dot green"></span>
+                                    <span class="panel-title">Diagram Percabangan (Selection)</span>
+                                </div>
+                                <div class="diagram-svg-container">
+                                    <svg id="svg-selection" viewBox="0 0 400 360" width="100%" height="100%">
+                                        <defs>
+                                            <marker id="arrow-sel" markerWidth="10" markerHeight="7" refX="8" refY="3.5" orient="auto">
+                                                <polygon points="0 0, 10 3.5, 0 7" fill="#64748b" />
+                                            </marker>
+                                            <marker id="arrow-sel-active" markerWidth="10" markerHeight="7" refX="8" refY="3.5" orient="auto">
+                                                <polygon points="0 0, 10 3.5, 0 7" fill="#d97706" />
+                                            </marker>
+                                        </defs>
+                                        
+                                        <!-- Paths -->
+                                        <path id="sel-path-1" d="M 200,65 L 200,105" stroke="#475569" stroke-width="3" fill="none" marker-end="url(#arrow-sel)" />
+                                        
+                                        <!-- Decision Yes -> Process -->
+                                        <path id="sel-path-yes" d="M 255,135 L 320,135 L 320,185" stroke="#475569" stroke-width="3" fill="none" marker-end="url(#arrow-sel)" />
+                                        
+                                        <!-- Decision No -> End Join -->
+                                        <path id="sel-path-no" d="M 200,165 L 200,255" stroke="#475569" stroke-width="3" fill="none" marker-end="url(#arrow-sel)" />
+                                        
+                                        <!-- Process Yes -> End Join -->
+                                        <path id="sel-path-join" d="M 320,235 L 320,255 L 206,255" stroke="#475569" stroke-width="3" fill="none" marker-end="url(#arrow-sel)" />
+                                        
+                                        <!-- Join -> End -->
+                                        <path id="sel-path-end" d="M 200,255 L 200,285" stroke="#475569" stroke-width="3" fill="none" marker-end="url(#arrow-sel)" />
+                                        
+                                        <!-- Nodes -->
+                                        <g id="sel-node-start" class="flowchart-node node-oval">
+                                            <rect x="130" y="25" width="140" height="40" rx="20" ry="20" class="node-shape" />
+                                            <text x="200" y="49" class="node-text">Mulai</text>
+                                        </g>
+                                        
+                                        <!-- Decision (Belah Ketupat) -->
+                                        <g id="sel-node-decision" class="flowchart-node node-rhombus">
+                                            <polygon points="200,105 255,135 200,165 145,135" class="node-shape" />
+                                            <text x="200" y="139" class="node-text">Naik Motor?</text>
+                                            <text x="270" y="125" class="label-text text-yes">Ya</text>
+                                            <text x="215" y="185" class="label-text text-no">Tidak</text>
+                                        </g>
+                                        
+                                        <g id="sel-node-process-yes" class="flowchart-node node-rectangle">
+                                            <rect x="255" y="185" width="130" height="50" rx="6" class="node-shape" />
+                                            <text x="320" y="214" class="node-text">Pakai Helm</text>
+                                        </g>
+                                        
+                                        <g id="sel-node-end" class="flowchart-node node-oval">
+                                            <rect x="130" y="285" width="140" height="40" rx="20" ry="20" class="node-shape" />
+                                            <text x="200" y="309" class="node-text">Selesai</text>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. LOOPING PANE -->
+                <div class="tab-pane" id="pane-looping">
+                    <div class="structure-grid">
+                        <div class="pane-details">
+                            <div class="glass-panel info-card-structure">
+                                <div class="card-header-accent color-terminator">
+                                    <i class="fa-solid fa-arrows-spin"></i>
+                                    <h3>Apa itu Perulangan (Looping)?</h3>
+                                </div>
+                                <div class="card-body-structure">
+                                    <p class="structure-explanation">
+                                        Struktur Perulangan adalah alur yang <strong>mengulangi sekumpulan langkah atau kegiatan</strong> tertentu secara berulang-ulang selama kondisi syarat yang ditentukan masih belum terpenuhi (Bernilai Belum Penuh).
+                                    </p>
+                                    <div class="analogi-box-structure">
+                                        <div class="analogi-title">
+                                            <i class="fa-solid fa-lightbulb"></i>
+                                            <span>Analogi Kehidupan Sehari-hari:</span>
+                                        </div>
+                                        <p class="analogi-text">
+                                            Mengisi ember dengan air! Kamu menaruh ember di bawah keran, lalu masuk ke perulangan: "Apakah ember sudah penuh?". Selama jawabannya Belum (Tidak), kamu terus menuangkan air gayung demi gayung. Jika sudah penuh (Ya), kamu berhenti menuangkan air.
+                                        </p>
+                                    </div>
+
+                                    <!-- Visual Simulation Box for Looping -->
+                                    <div class="analogi-visual-box block-looping" id="visual-looping">
+                                        <div class="visual-shelf loop-water">
+                                            <div class="shelf-content-loop">
+                                                <!-- Faucet -->
+                                                <div class="mini-faucet" id="loop-faucet">
+                                                    <div class="faucet-pipe"></div>
+                                                    <div class="faucet-nozzle"></div>
+                                                    <div class="water-stream" id="loop-water-stream"></div>
+                                                </div>
+                                                <!-- Bucket -->
+                                                <div class="mini-bucket" id="loop-bucket">
+                                                    <div class="bucket-handle"></div>
+                                                    <div class="bucket-body">
+                                                        <div class="bucket-water" id="loop-bucket-water"></div>
+                                                        <div class="bucket-face" id="loop-bucket-face">◕ ◕</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="visual-status" id="status-looping">Status: Bersiap mengisi ember</div>
+                                    </div>
+
+                                    <button class="btn btn-primary btn-glow btn-animate-flow" data-flow="looping">
+                                        <i class="fa-solid fa-play"></i> Simulasikan Alur Perulangan
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pane-diagram">
+                            <div class="glass-panel diagram-card-structure">
+                                <div class="card-title-bar">
+                                    <span class="dot red"></span>
+                                    <span class="dot yellow"></span>
+                                    <span class="dot green"></span>
+                                    <span class="panel-title">Diagram Perulangan (Looping)</span>
+                                </div>
+                                <div class="diagram-svg-container">
+                                    <svg id="svg-looping" viewBox="0 0 400 360" width="100%" height="100%">
+                                        <defs>
+                                            <marker id="arrow-loop" markerWidth="10" markerHeight="7" refX="8" refY="3.5" orient="auto">
+                                                <polygon points="0 0, 10 3.5, 0 7" fill="#64748b" />
+                                            </marker>
+                                            <marker id="arrow-loop-active" markerWidth="10" markerHeight="7" refX="8" refY="3.5" orient="auto">
+                                                <polygon points="0 0, 10 3.5, 0 7" fill="#10b981" />
+                                            </marker>
+                                        </defs>
+                                        
+                                        <!-- Paths -->
+                                        <path id="loop-path-1" d="M 200,65 L 200,105" stroke="#475569" stroke-width="3" fill="none" marker-end="url(#arrow-loop)" />
+                                        <path id="loop-path-2" d="M 200,155 L 200,195" stroke="#475569" stroke-width="3" fill="none" marker-end="url(#arrow-loop)" />
+                                        
+                                        <!-- Decision No/Belum -> Loop back path -->
+                                        <path id="loop-path-yes" d="M 255,225 L 320,225 L 320,85 L 200,85 L 200,100" stroke="#475569" stroke-width="3" fill="none" marker-end="url(#arrow-loop)" />
+                                        
+                                        <!-- Decision Yes/Sudah -> End -->
+                                        <path id="loop-path-no" d="M 200,255 L 200,285" stroke="#475569" stroke-width="3" fill="none" marker-end="url(#arrow-loop)" />
+                                        
+                                        <!-- Nodes -->
+                                        <g id="loop-node-start" class="flowchart-node node-oval">
+                                            <rect x="130" y="25" width="140" height="40" rx="20" ry="20" class="node-shape" />
+                                            <text x="200" y="49" class="node-text">Mulai</text>
+                                        </g>
+                                        
+                                        <!-- Process: Tuang Air -->
+                                        <g id="loop-node-process" class="flowchart-node node-rectangle">
+                                            <rect x="110" y="105" width="180" height="50" rx="6" class="node-shape" />
+                                            <text x="200" y="134" class="node-text">Tuang 1 Gayung Air</text>
+                                        </g>
+                                        
+                                        <!-- Decision (Belah Ketupat): Ember Penuh? -->
+                                        <g id="loop-node-decision" class="flowchart-node node-rhombus">
+                                            <polygon points="200,195 255,225 200,255 145,225" class="node-shape" />
+                                            <text x="200" y="229" class="node-text">Ember Penuh?</text>
+                                            <text x="270" y="215" class="label-text text-no">Belum</text>
+                                            <text x="210" y="275" class="label-text text-yes">Ya</text>
+                                        </g>
+                                        
+                                        <g id="loop-node-end" class="flowchart-node node-oval">
+                                            <rect x="130" y="285" width="140" height="40" rx="20" ry="20" class="node-shape" />
+                                            <text x="200" y="309" class="node-text">Selesai</text>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
     <!-- ATURAN PENTING SECTION -->
     <section class="section section-rules">
         <div class="container">
@@ -398,6 +801,7 @@
                     <a href="#hero">Atas</a>
                     <a href="#teori">Materi Simbol</a>
                     <a href="#simulator">Simulator</a>
+                    <a href="#struktur">Struktur Alur</a>
                 </div>
                 <p class="copyright">&copy; 2026. Dibuat dengan &hearts; untuk Micro Teaching SMP.</p>
             </div>

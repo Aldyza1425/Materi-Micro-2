@@ -58,10 +58,27 @@ Jika Digambar ke Dalam Simbol Flowchart
  Keluar Rumah $rightarrow$ Dimasukkan ke dalam simbol Persegi Panjang (Proses).
  Selesai $rightarrow$ Dimasukkan ke dalam simbol Oval.
 
+### 5. 3 Struktur Kontrol Alur Logika (Dasar Algoritma)
+
+Dalam membuat program komputer atau algoritma, terdapat 3 cara utama untuk mengatur jalannya alur data kita:
+
+1. **Runtunan (Sequence)**
+   - **Artinya:** Urutan langkah yang berjalan lurus berurutan dari awal sampai akhir, satu per satu, tanpa bercabang atau berputar balik.
+   - **Analogi SMP:** Cara menyeduh susu cokelat hangat (Mulai -> Masukkan susu bubuk -> Tuangkan air panas -> Aduk hingga rata -> Selesai).
+
+2. **Percabangan (Selection / Branching)**
+   - **Artinya:** Alur yang memiliki percabangan atau pilihan karena ada suatu syarat/kondisi tertentu yang harus diuji menggunakan simbol Decision (Belah Ketupat).
+   - **Analogi SMP:** Logika memakai helm (Jika naik sepeda motor, maka wajib memakai helm. Jika tidak naik motor, tidak perlu memakai helm).
+
+3. **Perulangan (Iteration / Looping)**
+   - **Artinya:** Alur yang mengulangi suatu tindakan atau proses tertentu berulang-ulang selama kondisi/syarat masih terpenuhi.
+   - **Analogi SMP:** Logika mengisi air ke dalam ember (Selama ember belum penuh, teruslah menuangkan air gayung demi gayung. Jika ember sudah penuh, berhenti mengisi air).
+
 ---
 
-### 5. Aturan Penting Membuat Flowchart
+### 6. Aturan Penting Membuat Flowchart
 
 1. Selalu Mulai dari Atas ke Bawah Alur flowchart standar mengalir dari atas ke bawah atau dari kiri ke kanan.
 2. Harus Ada Awal dan Akhir Setiap flowchart hanya boleh memiliki satu simbol Start dan minimal satu simbol End.
-3. Pilihan yang Jelas Pada simbol keputusan (belah ketupat), pastikan garis keluar diberi label yang jelas (seperti YaTidak atau BenarSalah).
+3. Pilihan yang Jelas Pada simbol keputusan (belah ketupat), pastikan garis keluar diberi label yang jelas (seperti Ya/Tidak atau Benar/Salah).
+
