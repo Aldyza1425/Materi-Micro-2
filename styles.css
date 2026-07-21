@@ -1491,6 +1491,68 @@ footer {
     color: var(--color-primary);
 }
 
+/* 12.1 FOOTER SUMMARY & MOTIVATION */
+.footer-summary-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    background: var(--bg-light-base);
+    border: 1px solid var(--border-light);
+    border-radius: 16px;
+    padding: 24px;
+    margin: 20px auto 30px auto;
+    max-width: 800px;
+    width: 100%;
+    text-align: left;
+    gap: 24px;
+    box-shadow: var(--shadow-premium);
+}
+
+.footer-summary-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-summary-item h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-summary-item p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+.footer-summary-divider {
+    width: 1px;
+    background-color: var(--border-light);
+}
+
+.text-yellow {
+    color: var(--accent-decision);
+}
+
+@media (max-width: 768px) {
+    .footer-summary-card {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+    .footer-summary-divider {
+        width: 100%;
+        height: 1px;
+    }
+}
+
 .copyright {
     font-size: 0.8rem;
     color: var(--text-muted);
@@ -2013,8 +2075,8 @@ path.active-path-loop {
     background: #94a3b8;
     border: 3px solid #334155;
     border-radius: 10px;
-    top: 27px;          /* pot center=(139,48), spout tip=(178,67) aligns with stream ✓ */
-    left: 110px;        /* moved right toward center; spout-x = 139+39 ≈ 178 ✓ */
+    top: 16px;          /* spout tip after rotate(35deg) = center(130,37)+vector(48,30) = (178,67) ✓ */
+    left: 101px;        /* center at (101+29, 16+21) = (130, 37) */
     transition: all 0.8s ease-in-out;
     opacity: 0;
     transform: translateY(10px);
